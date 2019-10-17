@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Specificity</title>
+
+    <style type="text/css" media="screen">
+      body {
+        color: red;
+      }
+
+      ul {
+        color: purple;
+      }
+
+      li {
+        color: orange;
+      }
+
+      .highlight {
+        color: yellow;
+      }
+
+      #special {
+        color: pink;
+      }
+
+      <!-- Check out https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity -->
+    </style>
+  </head>
+  <body>
+    <p>HELLO</p>
+
+    <ul>
+      <li id="special" class="highlight">John</li>
+      <li>Hugh</li>
+      <li class="highlight">Margie</li>
+      <li>Candice</li>
+    </ul>
+  </body>
+</html>

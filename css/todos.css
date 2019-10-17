@@ -1,0 +1,48 @@
+li {
+  border: 2px solid red;
+}
+
+/* id selector */
+
+#special {
+  background: yellow;
+}
+
+/* class selector */
+
+.completed {
+  text-decoration: line-through;
+}
+
+/* Star selector  */
+
+* {
+  border: 1px solid lightgrey;
+}
+
+/* Descendant selector  */
+/* every anchor tag that's inside of an li */
+
+li a {
+  color: red;
+}
+
+/* adjacent selector */
+/* element that come after another element - a sibling  */
+/* all the ul after a h4  */
+h4 + ul {
+  border: 1px solid green;
+}
+
+/* attribute selector  */
+/* select all attributes of a particular type e.g. href / input  */
+
+a[ahref="http://www.google.com"] {
+  background: blue;
+}
+
+/* nth of type  */
+
+ul:nth-of-type(3) {
+  background: purple;
+}
