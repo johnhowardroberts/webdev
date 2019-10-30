@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+	<style media="screen">
+		.big {
+			font-size: 100px;
+			color: orange;
+			border: 5px solid red;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Welcome to MY DOM Demo</h1>
+	<p>Corgi mixes are <strong>super</strong> adorable</p>
+
+	<ul>
+		<li>Orchids</li>
+		<li>Succulents</li>
+		<li>Tulips</li>
+	</ul>
+
+	<img src="https://barrelhorseworld.com/dogs/images/1145556d.jpg">
+	<img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/05/corgi-mix-cross-breeds-18-591c39272d49f__605.jpg">
+
+	<script type="text/javascript">
+		// first select the attrbiute to work from
+		var lis = document.querySelectorAll("li");
+		//	for loop to create an event listener for EACH li within the lis variable (which contains the HTML collection of the 3 li properties)
+		for (var i = 0; i < lis.length; i++) {
+			lis[i].addEventListener("click", function() {
+				// this refers to item event was on, so click in this case
+				// and turns the individual list item pink when you click it
+				this.style.color = "pink";
+			});
+		}
+
+		// note - do not have to pass an anonymous function() {}, can pass through the name
+		// of a function that you've declared somewhere else in the Script (do not add parantheses)
+	</script>
+
+
+</body>
+
+</html>
