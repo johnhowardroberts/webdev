@@ -1,0 +1,21 @@
+{
+  "name": "--yes",
+  "version": "1.0.0",
+  "description": "--yes",
+  "main": "--yes",
+  "scripts": {
+    "test": "--yes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "--yes"
+  },
+  "keywords": [
+    "--yes"
+  ],
+  "author": "--yes",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "faker": "^4.1.0"
+  }
+}
